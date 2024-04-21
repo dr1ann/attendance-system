@@ -1,0 +1,111 @@
+a {
+    display: inline-block;
+    margin: 0.60em 0 1em 2px; /* Increased padding */
+    
+    font-weight: bold;
+  
+    text-decoration: none;
+    
+   
+    color: #01579B;
+  }
+
+ /* h1 {
+    color: #01579B;
+ } */
+  
+  form {
+    padding: 1.5em 0 .3em 0; /* Increased padding */
+
+    
+    
+  }
+  
+  label {
+    display: block;
+    position: relative;
+    /* margin-bottom: 1.5em;  */
+  }
+  
+  button,
+  input {
+    display: block;
+    width: 100%;
+    height: 2.5em; /* Increased height */
+    padding: 1.5em 1em 1.2em 1em; /* Increased padding */
+    margin: 0;
+    font-size: 1.2em; /* Increased font-size */
+    
+   margin-top: 10px;
+   margin-bottom: 5px;
+    border-radius: 0.375em; /* Increased border-radius */
+    box-sizing: border-box;
+    outline: none;
+ 
+    
+  }
+.hide {
+    display: none !important;
+}
+.show {
+    display: block;
+}
+  input + span {
+    position: absolute;
+    left: 1em; /* Adjusted position */
+    top: 0.75em; /* Adjusted position */
+    padding: 0 0.5em; /* Adjusted padding */
+   
+    
+    border-radius: 1px;
+    color: #888;
+    font-family: sans-serif;
+    line-height: 2em; /* Adjusted line-height */
+    transition: top 0.15s;
+  }
+  span {
+    display: inline-block;
+    padding: 0.60em 0 1em 2px; /* Increased padding */
+    
+    font-weight: bold;
+  
+    text-decoration: none;
+    
+   
+    color: #01579B;
+    pointer-events: none;
+  }
+  input:focus + span,
+  input:valid + span {
+    top: -.8em; /* Adjusted position */
+    left: 1em; /* Adjusted position */
+    background-color: white;
+    font-size: 0.9em; /* Adjusted font-size */
+    letter-spacing: 1px;
+   border-radius: .375em;
+    
+  }
+  
+  input:focus {
+    border-color: #01579B;
+  }
+  
+  input:focus + span {
+    color: #01579B;
+    
+  }
+  
+  button {
+    background: #D9D9D9;
+    color: #01579B;
+    line-height: 0;
+    letter-spacing: 1px; 
+    padding: 1.5em 1em !important; 
+    border: none !important;
+    font-weight: bold;
+  }
+  
+
+  
+  
+  
