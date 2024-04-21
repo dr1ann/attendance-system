@@ -53,7 +53,7 @@ a {
   input + span {
     position: absolute;
     left: 1em; /* Adjusted position */
-    top: 0.7em; /* Adjusted position */
+    top: 0.8em; /* Adjusted position */
     padding: 0 0.5em; /* Adjusted padding */
     font-size: 0.875rem;
     line-height: 1.25em;
@@ -87,7 +87,11 @@ a {
    border-radius: .375em;
     
   }
-  
+  span {
+    font-size: .75rem !important;
+    line-height: 1rem !important;
+    
+  }
   input:focus {
     border-color: #01579B;
   }
