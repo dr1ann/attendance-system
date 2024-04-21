@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        
-        smallscreens: "430px",
+        smallscreens: "510px",
+        smallerscreens: "430px",
+        tabletscreen: "824px",
         bigscreens: '1920px'
         
       },
