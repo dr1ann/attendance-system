@@ -769,11 +769,6 @@ video {
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -910,20 +905,8 @@ video {
   height: 100vh;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .w-24 {
@@ -936,6 +919,10 @@ video {
 
 .w-\[60\%\] {
   width: 60%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[90\%\] {
@@ -961,10 +948,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
 }
 
 .max-w-\[90\%\] {
@@ -1985,10 +1968,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2099,16 +2078,12 @@ video {
      object-fit: scale-down;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-2 {
@@ -2792,27 +2767,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
-  .sm\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .sm\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .sm\:h-full {
-    height: 100%;
-  }
-
-  .sm\:min-h-screen {
-    min-height: 100vh;
-  }
-
   .sm\:w-\[70\%\] {
     width: 70%;
   }
@@ -2846,8 +2800,16 @@ video {
     height: 100%;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 }
 
@@ -2880,17 +2842,8 @@ video {
     height: 1.75rem;
   }
 
-  .lg\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .lg\:h-full {
-    height: 100%;
-  }
-
-  .lg\:min-h-screen {
-    min-height: 100vh;
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 
   .lg\:w-7 {
@@ -2901,28 +2854,12 @@ video {
     width: 50%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
   .lg\:gap-12 {
     gap: 3rem;
-  }
-
-  .lg\:p-6 {
-    padding: 1.5rem;
   }
 
   .lg\:p-4 {
