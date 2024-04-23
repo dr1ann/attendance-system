@@ -2780,6 +2780,15 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .sm\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .sm\:w-\[70\%\] {
     width: 70%;
   }
