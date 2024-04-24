@@ -906,6 +906,15 @@ video {
   min-height: min-content;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
 .w-24 {
   width: 6rem;
 }
