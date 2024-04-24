@@ -2903,6 +2903,10 @@ video {
     margin-top: 1rem;
   }
 
+  .xl\:h-full {
+    height: 100%;
+  }
+
   .xl\:min-h-screen {
     min-height: 100vh;
   }
