@@ -1990,6 +1990,22 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2106,6 +2122,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-2 {
@@ -2884,6 +2904,10 @@ video {
     padding: 1rem;
   }
 
+  .lg\:p-2 {
+    padding: 0.5rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2940,6 +2964,10 @@ video {
 
   .xl\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .xl\:p-2 {
+    padding: 0.5rem;
   }
 
   .xl\:px-0 {
