@@ -695,6 +695,14 @@ video {
   top: 50%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -901,9 +909,18 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-min {
   min-height: -moz-min-content;
   min-height: min-content;
+}
+
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 .w-24 {
@@ -2823,6 +2840,10 @@ video {
 
   .lg\:h-7 {
     height: 1.75rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:min-h-screen {
