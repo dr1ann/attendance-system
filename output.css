@@ -2845,6 +2845,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:gap-12 {
     gap: 3rem;
   }
