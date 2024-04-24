@@ -2849,6 +2849,10 @@ video {
     align-items: center;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:gap-12 {
     gap: 3rem;
   }
