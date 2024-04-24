@@ -901,10 +901,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .min-h-min {
   min-height: -moz-min-content;
   min-height: min-content;
@@ -912,11 +908,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-max {
-  min-height: -moz-max-content;
-  min-height: max-content;
 }
 
 .w-24 {
@@ -958,10 +949,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .flex-shrink {
@@ -2092,6 +2079,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -2866,8 +2857,8 @@ video {
     gap: 3rem;
   }
 
-  .lg\:p-4 {
-    padding: 1rem;
+  .lg\:p-6 {
+    padding: 1.5rem;
   }
 
   .lg\:text-4xl {
