@@ -770,6 +770,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -790,8 +795,8 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .box-border {
@@ -905,26 +910,13 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .min-h-min {
   min-height: -moz-min-content;
   min-height: min-content;
 }
 
-.min-h-svh {
-  min-height: 100svh;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-24 {
@@ -941,6 +933,10 @@ video {
 
 .w-\[70\%\] {
   width: 70%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[90\%\] {
@@ -966,14 +962,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
-}
-
-.min-w-\[100vw\] {
-  min-width: 100vw;
 }
 
 .flex-shrink {
@@ -1990,22 +1978,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
-}
-
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
-
-.bg-opacity-60 {
-  --tw-bg-opacity: 0.6;
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2122,10 +2094,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-2 {
@@ -2837,16 +2805,6 @@ video {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:min-h-screen {
-    min-height: 100vh;
-  }
-}
-
 @media (min-width: 824px) {
   .tabletscreen\:w-\[60\%\] {
     width: 60%;
@@ -2872,8 +2830,16 @@ video {
     margin-bottom: 2rem;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .lg\:h-7 {
     height: 1.75rem;
+  }
+
+  .lg\:min-h-screen {
+    min-height: 100vh;
   }
 
   .lg\:w-1\/2 {
@@ -2904,10 +2870,6 @@ video {
     padding: 1rem;
   }
 
-  .lg\:p-2 {
-    padding: 0.5rem;
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2934,6 +2896,10 @@ video {
     margin-bottom: 2.5rem;
   }
 
+  .xl\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .xl\:min-h-screen {
     min-height: 100vh;
   }
@@ -2954,6 +2920,18 @@ video {
     width: auto;
   }
 
+  .xl\:w-\[98\%\] {
+    width: 98%;
+  }
+
+  .xl\:w-\[96\%\] {
+    width: 96%;
+  }
+
+  .xl\:w-\[97\%\] {
+    width: 97%;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -2966,8 +2944,8 @@ video {
     gap: 1.5rem;
   }
 
-  .xl\:p-2 {
-    padding: 0.5rem;
+  .xl\:p-4 {
+    padding: 1rem;
   }
 
   .xl\:px-0 {
