@@ -919,6 +919,11 @@ video {
   min-height: 100vh;
 }
 
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -2856,6 +2861,10 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:justify-center {
