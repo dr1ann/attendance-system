@@ -2860,6 +2860,10 @@ video {
     gap: 3rem;
   }
 
+  .lg\:overflow-y-auto {
+    overflow-y: auto;
+  }
+
   .lg\:p-4 {
     padding: 1rem;
   }
