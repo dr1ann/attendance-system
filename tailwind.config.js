@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        extrasmallscreens:'300px',
         smallscreens: "510px",
         smallerscreens: "430px",
         tabletscreen: "824px",
@@ -12,6 +13,9 @@ module.exports = {
       },
       textShadow: {
         custom: '2px 4px 3px rgba(0,0,0,.3)'
+      },
+      gridTemplateColumns: {
+        'fit': 'repeat(auto-fill, minmax(200px, 1fr))'
       }
     },
   },
