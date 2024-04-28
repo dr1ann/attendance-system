@@ -701,10 +701,6 @@ video {
   left: 0px;
 }
 
-.left-\[260px\] {
-  left: 260px;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -717,8 +713,16 @@ video {
   top: 50%;
 }
 
-.top-2 {
-  top: 0.5rem;
+.bottom-\[-8px\] {
+  bottom: -8px;
+}
+
+.bottom-\[-2px\] {
+  bottom: -2px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .isolate {
@@ -2309,12 +2313,16 @@ video {
   padding-right: 0.5rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-left {
@@ -3043,12 +3051,12 @@ video {
     left: 260px;
   }
 
-  .sm\:top-\[4\.5em\] {
-    top: 4.5em;
-  }
-
   .sm\:right-0 {
     right: 0px;
+  }
+
+  .sm\:top-\[4\.5em\] {
+    top: 4.5em;
   }
 
   .sm\:ml-64 {
@@ -3093,6 +3101,15 @@ video {
     padding-right: 1rem;
   }
 
+  .sm\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .sm\:pr-0 {
+    padding-right: 0px;
+  }
+
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3106,6 +3123,11 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:underline {
