@@ -983,6 +983,10 @@ video {
   min-height: 100vh;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -2415,10 +2419,6 @@ video {
   vertical-align: super;
 }
 
-.font-custom {
-  font-family: Helvetica;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3201,10 +3201,6 @@ video {
 
   .lg\:top-\[4em\] {
     top: 4em;
-  }
-
-  .lg\:m-10 {
-    margin: 2.5rem;
   }
 
   .lg\:m-6 {
