@@ -2417,6 +2417,14 @@ video {
   font-weight: 600;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -3133,6 +3141,10 @@ video {
 
   .lg\:m-6 {
     margin: 1.5rem;
+  }
+
+  .lg\:m-8 {
+    margin: 2rem;
   }
 
   .lg\:mx-0 {
