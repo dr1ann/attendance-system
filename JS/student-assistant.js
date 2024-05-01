@@ -46,7 +46,7 @@ Swal.fire({
   if (result.isConfirmed) {
     Swal.fire(
       'Success!',
-      'Teacher was marked as PRESENT.',
+      'Joshua Baban was marked as PRESENT.',
       'success'
     );
     attendanceStatus.src='/Images/present.png';
@@ -88,7 +88,7 @@ updateBtn2.addEventListener('click', function() {
     const lateTime = result.value;
     Swal.fire(
       'Success!',
-      `Teacher was marked as LATE (${lateTime}).`,
+      `Joshua Baban was marked as LATE (${lateTime}).`,
       'success'
     );
     attendanceStatus.src = '/Images/late.png';
