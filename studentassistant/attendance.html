@@ -8,8 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    
 </head>
 <body >
+    
     <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow-md drop-shadow-md">
         <div class="flex items-center justify-center lg:justify-start px-0 lg:px-4 py-2 lg:py-0">
             <img src="/Images/attendance.png" class="w-8 lg:w-16" alt="">
@@ -126,9 +129,9 @@
                 </div>
                 <span class="text-xs text-[#fd7e14] font-semibold">(30 mins late)</span>
                <span class="text-sm mt-4 font-semibold">ROOM 315 (National Service Training Program)</span>
-                <button class="flex flex-row gap-1 items-center justify-start mt-4">
-                    <span class="text-base font-semibold">EDIT</span>
-                    <i class="fa-solid fa-pen-to-square text-base"></i>
+                <button class="flex shadow drop-shadow flex-row gap-1 items-center justify-start mt-4 bg-[#D9D9D9] w-fit px-2 py-1 rounded-lg ">
+                    <span class="text-sm font-semibold">EDIT</span>
+                    <i class="fa-solid fa-pen-to-square text-sm"></i>
                 </button>
                
             </li>
@@ -148,10 +151,10 @@
                 </div>
   
                <span class="text-sm mt-4 font-semibold">ROOM 315 (Discrete Structures)</span>
-                <button class="flex flex-row gap-1 items-center justify-start mt-4">
-                    <span class="text-base font-semibold">EDIT</span>
-                    <i class="fa-solid fa-pen-to-square text-base"></i>
-                </button>
+               <button class="flex flex-row gap-1 items-center shadow drop-shadow justify-start mt-4 bg-[#D9D9D9] w-fit px-2 py-1 rounded-lg ">
+                <span class="text-sm font-semibold">EDIT</span>
+                <i class="fa-solid fa-pen-to-square text-sm"></i>
+            </button>
                
             </li>
 
@@ -169,10 +172,10 @@
                
                 </div>
                <span class="text-sm mt-4 font-semibold">ROOM 315 (Computer Programming 1)</span>
-                <button class="flex flex-row gap-1 items-center justify-start mt-4">
-                    <span class="text-base font-semibold">EDIT</span>
-                    <i class="fa-solid fa-pen-to-square text-base"></i>
-                </button>
+               <button class="flex shadow drop-shadow flex-row gap-1 items-center justify-start mt-4 bg-[#D9D9D9] w-fit px-2 py-1 rounded-lg ">
+                <span class="text-sm font-semibold">EDIT</span>
+                <i class="fa-solid fa-pen-to-square text-sm"></i>
+            </button>
                
             </li>
         </ul>
@@ -183,15 +186,15 @@
     <table class="rounded-lg w-full text-black text-left rtl:text-right hidden lg:block">
         <thead>
             <tr class="bg-[#2C384A] shadow drop-shadow ">
-                <th scope="col" id="activityHeader" >
+                <th scope="col" >
                     <div class="flex flex-row items-center ">
                     <img src="/Images/calendar.png" class="w-12 pl-4 object-contain h-auto" alt="">
                     <span class=" text-base lg:text-lg px-4 py-3 text-white">MAY 1, 2024</span>
                 </div>
                 </th>
-                <th scope="col" id="dateTimeHeader" class="px-4 py-3 text-center text-base lg:text-lg text-white">ROOM NO. & SUBJECT</th>
-                <th scope="col" id="dateTimeHeader"  class="text-center px-4 py-3 text-white">ATTENDANCE STATUS</th>
-                <th scope="col" id="dateTimeHeader" class="px-4 py-3 text-center text-white text-xl">
+                <th scope="col" class="px-4 py-3 text-center text-base lg:text-lg text-white">ROOM NO. & SUBJECT</th>
+                <th scope="col" class="text-center px-4 py-3 text-white">ATTENDANCE STATUS</th>
+                <th scope="col" class="px-4 py-3 text-center text-white text-xl">
                   EDIT
                 </th>
                 
@@ -229,8 +232,9 @@
             
             </td>
             <td class="bg-gray-100  h-full shadow drop-shadow px-6 py-3">
-                <div class="flex justify-center items-center"> 
+                <div class="flex flex-wrap justify-center items-center gap-4" > 
                     <i class="fa-solid fa-pen-to-square text-xl"></i>
+
                 </div>
          
          </td>
@@ -259,7 +263,7 @@
                 <td class="bg-gray-100 text-center  h-full shadow drop-shadow px-6 py-3 text-sm lg:text-base">315 <br> (Discrete Structures)</td>
                 <td class="bg-gray-100  h-full shadow drop-shadow px-6 py-3">
                    <div class="flex justify-center items-center"> 
-                    <img src="/Images/present.png" class="w-8 h-auto " alt="late">
+                    <img  src="/Images/present.png" class="w-8 h-auto " alt="late">
                    
                    </div>
             
@@ -294,15 +298,15 @@
                 </th>
                 <td class="bg-gray-100 text-center  h-full shadow drop-shadow px-6 py-3 text-sm lg:text-base">315 <br> (Computer Programming 1)</td>
                 <td class="bg-gray-100  h-full shadow drop-shadow px-6 py-3">
-                   <div class="flex justify-center items-center"> 
-                    <img src="/Images/pending.png" class="w-8 h-auto " alt="late">
+                   <div  class="flex justify-center items-center"> 
+                    <img id="attendanceStatus" src="/Images/pending.png" class=" w-8 h-auto " alt="late">
                    
                    </div>
             
             </td>
             <td class="bg-gray-100  h-full shadow drop-shadow px-6 py-3">
-                <div class="flex justify-center items-center"> 
-                    <i class="fa-solid fa-pen-to-square text-xl"></i>
+                <div id="editContainer" class="cursor-pointer flex flex-wrap justify-center items-center gap-4" > 
+                    <i id="editBtn" class="fa-solid fa-pen-to-square cursor-pointer text-xl"></i>
                 </div>
          
          </td>
@@ -355,24 +359,11 @@
 </div>
 </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/JS/student-assistant.js"></script>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const drawerButton = document.querySelector('[data-drawer-toggle="default-sidebar"]');
-      const drawer = document.getElementById('default-sidebar');
-  
-      drawerButton.addEventListener('click', function () {
-        drawer.classList.toggle('-translate-x-full');
-      });
-  
-      // Close sidebar when clicking outside of it
-      document.addEventListener('click', function (event) {
-        if (!drawer.contains(event.target) && !drawerButton.contains(event.target)) {
-          drawer.classList.add('-translate-x-full');
-        }
-      });
-    });
-  </script>
+
   
   
 </html>
