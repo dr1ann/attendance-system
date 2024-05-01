@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -2304,8 +2304,8 @@ video {
   padding-right: 1rem;
 }
 
-.pr-6 {
-  padding-right: 1.5rem;
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .ps-2 {
@@ -3156,10 +3156,6 @@ video {
 
   .lg\:mb-8 {
     margin-bottom: 2rem;
-  }
-
-  .lg\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .lg\:mt-6 {
