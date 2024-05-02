@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="/CSS/output.css">
 </head>
 <body >
-    <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow-md drop-shadow-md">
+    <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow drop-shadow">
         <div class="flex items-center justify-center sm:justify-start px-0 sm:px-4 py-2 sm:py-0">
             <img src="/Images/profile.png" class="w-8 sm:w-16" alt="">
             <div class="flex flex-col">
                 <h1 class="text-sm sm:text-base pr-4 sm:pr-0 font-bold">PROFILE</h1>
             </div>
         </div>
-        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 absolute z-20 p-2 my-2 ml-1 text-sm text-[#D9D9D9] rounded-lg sm:hidden hover:bg-transparent hover:shadow-md hover:drop-shadow-md">
+        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 absolute z-20 p-2 my-2 ml-1 text-sm text-[#D9D9D9] rounded-lg sm:hidden hover:bg-transparent hover:shadow hover:drop-shadow">
             <span class="sr-only">Open sidebar</span>
             <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -71,88 +71,119 @@
  
  <div class="p-4 sm:ml-64 min-h-screen">
     <div class="p-4 overflow-y-auto mt-[3em] sm:mt-[4em] rounded-lg ">
-    <table class="w-full text-white text-left rtl:text-right">
-        <thead>
-            <tr class="bg-[#2C384A]">
-               
-                <th scope="col" id="activityHeader" class=" text-base lg:text-lg px-6 py-3">Activity</th>
-                <th scope="col" id="dateTimeHeader" class=" text-base lg:text-lg px-6 py-3">Date & Time</th>
+    
+
+<div class="relative overflow-x-auto shadow sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3 shadow drop-shadow">
+                    Product name
+                </th>
+                <th scope="col" class="px-6 py-3 shadow drop-shadow">
+                    Color
+                </th>
+                <th scope="col" class="px-6 py-3 shadow drop-shadow">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3 shadow drop-shadow">
+                    Price
+                </th>
+                <th scope="col" class="px-6 py-3 shadow drop-shadow">
+                    Action
+                </th>
             </tr>
         </thead>
-        <tbody  >
-                <tr>
-               <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#01579B] h-full  shadow drop-shadow  ">
-                James <b>LOGGED IN</b>
-               </th>
-               <td  class="px-6 py-3 text-sm lg:text-base bg-[#01579B]  h-full shadow drop-shadow  ">
-                04/27/2024 03:30 PM
-               </td>
+        <tbody>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                <th scope="row" class="shadow drop-shadow px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 shadow drop-shadow">
+                    Silver
+                </td>
+                <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4">
+                    $2999
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
             </tr>
-
-
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4">
+                    White
+                </td>
+                <td class="px-6 py-4">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4">
+                    $1999
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
+            </tr>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4">
+                    Black
+                </td>
+                <td class="px-6 py-4">
+                    Accessories
+                </td>
+                <td class="px-6 py-4">
+                    $99
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
+            </tr>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4">
+                    Gray
+                </td>
+                <td class="px-6 py-4">
+                    Phone
+                </td>
+                <td class="px-6 py-4">
+                    $799
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
+            </tr>
             <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#ff0000] h-full  shadow drop-shadow  ">
-                    James marked Windy Cagulada as <b>ABSENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#ff0000]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4">
+                    Red
+                </td>
+                <td class="px-6 py-4">
+                    Wearables
+                </td>
+                <td class="px-6 py-4">
+                    $999
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
             </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#01579B] h-full  shadow drop-shadow  ">
-                    Bins <b>LOGGED IN</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#01579B]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#fd7e14] h-full  shadow drop-shadow  ">
-                    Bins marked Joshua Baban as <b>LATE</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#fd7e14]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-          
         </tbody>
     </table>
+</div>
+
 </div>
  </div>
  
