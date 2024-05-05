@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/output.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body >
     <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow drop-shadow">
-        <div class="flex items-center justify-center sm:justify-start px-0 sm:px-4 py-2 sm:py-0">
-            <img src="/Images/notification.png" class="w-8 sm:w-16" alt="">
+        <div class="flex items-center justify-center lg:justify-start px-0 lg:px-4 py-2 lg:py-0">
+            <img src="/Images/notification.png" class="w-8 lg:w-16" alt="">
             <div class="flex flex-col">
-                <h1 class="text-sm sm:text-base pr-4 sm:pr-0 font-bold">NOTIFICATIONS</h1>
+                <h1 class="text-sm lg:text-base pr-4 lg:pr-0 font-bold">NOTIFICATIONS</h1>
             </div>
         </div>
-        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 absolute z-20 p-2 my-2 ml-1 text-sm text-[#D9D9D9] rounded-lg sm:hidden hover:bg-transparent hover:shadow hover:drop-shadow">
+        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 absolute z-20 p-2 my-2 ml-1 text-sm text-[#D9D9D9] rounded-lg lg:hidden hover:bg-transparent hover:shadow hover:drop-shadow">
             <span class="sr-only">Open sidebar</span>
             <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -24,7 +26,7 @@
         
     </header>
    
-    <aside id="default-sidebar" class="fixed top-0 sm:top-[4em] left-0 z-40 w-64 h-screen   transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <aside id="default-sidebar" class="fixed top-0 lg:top-[4em] left-0 z-40 w-64 h-screen   transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
         <div class="h-full  px-3 py-4 overflow-y-auto bg-gray-50 shadow drop-shadow ">
             <div  class="flex items-center ps-2.5 mb-5">
                 <img src="/Images/logo.png" class="w-20 h-auto me-3  object-contain" alt="logo" />
@@ -69,95 +71,160 @@
     
     
  
- <div class="p-4 sm:ml-64 min-h-screen">
-    <div class="p-4 overflow-y-auto mt-[3em] sm:mt-[4em] rounded-lg ">
-    <table class="w-full text-white text-left rtl:text-right">
-        <thead>
-            <tr class="bg-[#2C384A]">
-               
-                <th scope="col" id="activityHeader" class=" text-base lg:text-lg px-6 py-3">Activity</th>
-                <th scope="col" id="dateTimeHeader" class=" text-base lg:text-lg px-6 py-3">Date & Time</th>
-            </tr>
-        </thead>
-        <tbody  >
-                <tr>
-               <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#01579B] h-full  shadow drop-shadow  ">
-                James <b>LOGGED IN</b>
-               </th>
-               <td  class="px-6 py-3 text-sm lg:text-base bg-[#01579B]  h-full shadow drop-shadow  ">
-                04/27/2024 03:30 PM
-               </td>
-            </tr>
-
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#ff0000] h-full  shadow drop-shadow  ">
-                    James marked Windy Cagulada as <b>ABSENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#ff0000]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#01579B] h-full  shadow drop-shadow  ">
-                    Bins <b>LOGGED IN</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#01579B]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#fd7e14] h-full  shadow drop-shadow  ">
-                    Bins marked Joshua Baban as <b>LATE</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#fd7e14]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
-
-            <tr>
-                <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
-                    Bins marked Humabona Gonzales as <b>PRESENT</b>
-                   </th>
-                   <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
-                    04/27/2024 03:30 PM
-                   </td>
-            </tr>
+ <div class="p-4 lg:ml-64 min-h-screen">
+    <div class="p-4 overflow-y-auto mt-[3em] lg:mt-[4em] rounded-lg ">
+<div class="lg:hidden">
+        <ul class="grid grid-cols-1 relative gap-6">
+            
           
-        </tbody>
-    </table>
+
+            <li style="border: 1px solid #D9D9D9;" id="showNotif" class="flex flex-wrap flex-col items-start gap-3 p-3 rounded-lg shadow drop-shadow">
+                
+                <i id="statusIcon" class="fa-solid fa-xmark text-2xl mb-20 absolute right-0 top-0 me-4 py-2 text-[#ff0000]"></i>
+             
+                <img src="/Images/female-prof.png" class="flex w-16 px-2 h-auto"  alt="">
+                <div class="flex flex-col gap-1">
+                    <div>
+                        <h3 class="font-bold text-lg">Sheena Muyuela (Faculty Admin)</h3>
+                        
+                    </div>
+          
+                   
+                    <h4 class="text-sm mt-2 font-semibold">Reminder: Attendance Checking Schedule Today</h4> 
+                  
+                 <span class="text-xs">May 5, 2024 at 12:00 AM</span>
+                
+                
+                </div>
+              
+              
+               
+            </li>
+
+        
+        </ul>
+    </div>
+        <!-- For large screens -->
+        <table class="table-auto mx-auto w-fit text-black text-left rtl:text-right hidden lg:block">
+            <thead class="bg-[#2C384A] shadow drop-shadow rounded-lg">
+                <tr class=" shadow drop-shadow ">
+                    <th scope="col" class="shadow drop-shadow text-base text-center px-4 py-3 text-white">FROM</th>
+                    <th scope="col" class="px-4 py-2 text-center text-base text-white shadow drop-shadow">SUBJECT</th>
+                    <th scope="col" class="px-4 py-2 text-center text-base text-white shadow drop-shadow">SENT</th>
+                    <th scope="col" class="px-4 py-2 text-center text-base text-white shadow drop-shadow">READ?</th>
+               
+                </tr>
+            </thead>
+            <tbody >
+              
+                <tr>
+                    <th scope="row" class=" px-4 py-2 text-base bg-gray-100 h-full  shadow drop-shadow  ">
+                     <div class="flex flex-row items-center justify-center gap-3 flex-wrap">
+                        <img src="/Images/female-prof.png" class="self-center w-10 h-10" alt="">
+                        
+                        <div class=" flex items-center flex-col">
+                            <h3 class="font-bold text-lg">
+                                Sheena Muyuela
+                            </h3>
+                            <span class="text-xs">(Faculty Admin)</span>
+                        </div>
+                          
+                            
+                              
+                     </div>
+                    </th>
+                    <td class="bg-gray-100 text-center  shadow drop-shadow px-4 py-2 text-base">
+                        <h3 id="showNotif" data-modal-target="notification-modal" data-modal-toggle="notification-modal" class="cursor-pointer ">
+                            Reminder: Attendance Checking Schedule Today
+                        </h3>
+                    </td>
+                    <td class="bg-gray-100 text-center  shadow drop-shadow px-4 py-2 ">
+                        <div>
+                            <h4 class="text-base font-bold">May 5, 2024</h4>
+                            <span class="text-sm">12:00 AM</span>
+                        </div>
+                        
+                    </td>
+                
+                    <td class="bg-gray-100 text-center  shadow drop-shadow px-4 py-2 ">
+                        <i id="statusIcon" class="fa-solid fa-xmark text-2xl text-[#ff0000]"></i>
+                    </td>
+                   
+                 </tr>
+
+    
+            </tbody>
+            
+
+        </table>
+       
 </div>
+
  </div>
- 
+  
+  <!-- Nofication modal -->
+  <div id="modalContainer" data-modal-backdrop="notification" tabindex="-1" aria-hidden="true" class="hidden  z-[99999] h-screen backdrop-blur-sm m-auto overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0  justify-center items-center w-full md:inset-0  max-h-full">
+    <div class="relative p-4 w-full max-w-[46rem]  m-auto ">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow ">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
+                <h3 class="text-xl font-semibold text-gray-900 ">
+                    Reminder: Attendance Checking Schedule Today
+                </h3>
+                <button id="closeNotif" type="button" class="text-gray-400 bg-transparent hover:bg-gray-300 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  data-modal-hide="notif-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+               
+                <div class="flex flex-row items-center justify-start gap-3 mb-2 ">
+                    <h1 class="font-semibold">FROM: </h1>
+                    <img src="/Images/female-prof.png" class="self-center w-10 h-10" alt="">
+                    
+                    <div class=" flex flex-col">
+                        <h3 class="font-bold text-lg">
+                            Sheena Muyuela (Faculty Admin)
+                        </h3>
+                        <span class="text-xs">on May 5, 12:00 am (6 hrs ago)</span>
+                    </div> 
+                 </div>
+
+                <div class="flex flex-col gap-3 text-base leading-relaxed text-black" >
+                    <p>
+                    This is a friendly reminder that today, [Date], you are scheduled to check the attendance
+                     of teachers. Please ensure you are present at every designated classroom at [Time] 
+                     to complete this task.
+                    </p>
+                    <ul class="list-disc  px-6">
+                        <span>Your responsibilities include:</span>
+                    <li>Marking teachers as present, absent, or late present.</li>
+                    <li> Ensuring accurate record-keeping of attendance.</li>
+                    <li>If you have any questions or need assistance, please feel free to reach out.</li>
+                    </ul>
+
+                    <br>
+                    <p>Thank you for your attention to this matter.</p>
+                    Best regards,
+                    <br>
+                    [Your Name or Faculty Admin's Name]
+                    
+                   
+                </p>
+               
+            </div>
+           
+       
+            </div>
+        </div>
+    </div>
+</div>
  <footer style="border-top: 1px solid #CCCCCC;" class=" bg-white gap-2 p-2 mt-4 lg:mt-6 relative">
-      <div  class="   flex justify-between sm:absolute sm:left-[260px] sm:right-0">
+      <div  class="   flex justify-between lg:absolute lg:left-[260px] lg:right-0">
     <p class="text-sm text-gray-500 py-4 px-1    lg:text-base font-semibold">
         ©2024 ADAS-STI, All Rights Reserved.
 
@@ -195,24 +262,10 @@
 </div>
 </div>
 </footer>
+<script src="/JS/notification-modal.js"></script>
+<script src="/JS/student-assistant.js"></script>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const drawerButton = document.querySelector('[data-drawer-toggle="default-sidebar"]');
-      const drawer = document.getElementById('default-sidebar');
-  
-      drawerButton.addEventListener('click', function () {
-        drawer.classList.toggle('-translate-x-full');
-      });
-  
-      // Close sidebar when clicking outside of it
-      document.addEventListener('click', function (event) {
-        if (!drawer.contains(event.target) && !drawerButton.contains(event.target)) {
-          drawer.classList.add('-translate-x-full');
-        }
-      });
-    });
-  </script>
+
   
   
 </html>

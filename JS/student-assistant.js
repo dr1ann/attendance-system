@@ -41,7 +41,7 @@ editBtn.addEventListener('click', function(e) {
     e.preventDefault();
     Swal.fire({
       title: 'Save Changes?',
-      text: 'Do you want to mark Joshua Baban as PRESENT?',
+      text: 'Do you want to mark Windy Cagulada as PRESENT?',
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Yes',
@@ -51,7 +51,7 @@ editBtn.addEventListener('click', function(e) {
       if (result.isConfirmed) {
       Swal.fire(
         'Success!',
-        'Joshua Baban was marked as PRESENT.',
+        'Windy Cagulada was marked as PRESENT.',
         'success'
       );
       attendanceStatus.src='/Images/present.png';
@@ -60,7 +60,7 @@ editBtn.addEventListener('click', function(e) {
       } else if (result.dismiss === Swal.DismissReason.cancel) {
       Swal.fire(
       'Cancelled',
-      'No changes were made. Joshua Baban remains as their previous status.',
+      'No changes were made. Windy Cagulada remains as their previous status.',
       'error'
       );
       }
@@ -71,7 +71,7 @@ editBtn.addEventListener('click', function(e) {
       lateColor.addEventListener('click', (e) => {
         Swal.fire({
           title: 'Save Changes?',
-          text: 'Enter the number of minutes/hours Joshua Baban was late:',
+          text: 'Enter the number of minutes/hours Windy Cagulada was late:',
           input: 'text',
           inputPlaceholder: 'e.g. 15 minutes',
           inputValidator: (value) => {
@@ -88,14 +88,14 @@ editBtn.addEventListener('click', function(e) {
           const lateTime = result.value;
           Swal.fire(
             'Success!',
-            `Joshua Baban was marked as LATE (${lateTime}).`,
+            `Windy Cagulada was marked as LATE (${lateTime}).`,
             'success'
           );
           attendanceStatus.src = '/Images/late.png';
           } else if (result.dismiss === Swal.DismissReason.cancel) {
           Swal.fire(
             'Cancelled',
-            'No changes were made. Joshua Baban remains as their previous status.',
+            'No changes were made. Windy Cagulada remains as their previous status.',
             'error'
           );
           }
@@ -111,7 +111,7 @@ e.preventDefault();
 
 Swal.fire({
 title: 'Save Changes?',
-text: 'Do you want to mark Joshua Baban as ABSENT?',
+text: 'Do you want to mark Windy Cagulada as ABSENT?',
 icon: 'warning',
 showCancelButton: true,
 confirmButtonText: 'Yes',
@@ -121,7 +121,7 @@ cancelButtonText: 'No',
 if (result.isConfirmed) {
 Swal.fire(
   'Success!',
-  'Joshua Baban was marked as ABSENT.',
+  'Windy Cagulada was marked as ABSENT.',
   'success'
 );
 attendanceStatus.src='/Images/absent.png';
@@ -130,7 +130,7 @@ attendanceStatus.src='/Images/absent.png';
 } else if (result.dismiss === Swal.DismissReason.cancel) {
 Swal.fire(
 'Cancelled',
-'No changes were made. Joshua Baban remains as their previous status.',
+'No changes were made. Windy Cagulada remains as their previous status.',
 'error'
 );
 }
