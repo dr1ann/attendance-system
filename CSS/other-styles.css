@@ -47,7 +47,11 @@
 .swal2-styled.swal2-cancel {
     background-color: #ff0000 !important;
 }
-
-.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel {
-    transition: background-color 0.3s ease !important;
+.swal2-styled.swal2-confirm:hover {
+    background-color: #013456 !important; /* Darken color on hover */
 }
+
+.swal2-styled.swal2-cancel:hover {
+    background-color: #cc0000 !important; /* Darken color on hover */
+}
+
