@@ -2516,6 +2516,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[\.75rem\] {
+  font-size: .75rem;
+}
+
 .font-black {
   font-weight: 900;
 }
