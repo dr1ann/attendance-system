@@ -1,6 +1,8 @@
-/* Reduce padding of the input field */
+
 .swal2-input {
-    padding: .5rem !important; /* Adjust the padding as needed */
+    padding: .2em !important;
+    font-size: 0.875em !important;
+    line-height: 1.25em !important;
     --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -8,10 +10,33 @@
     --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.swal2-title {
+    font-size: 1.625em !important;
+   
+}
+.swal2-content {
+    font-size: 1em !important;
+}
 
-/* Customize focus effect */
+@media (min-width: 1024px) {
+    .swal2-input {
+    padding: .5em !important;
+    font-size: 1em !important;
+    line-height: 1.5em !important;
+    }
+    .swal2-title {
+        font-size: 1.875em !important;
+       
+    }
+    .swal2-content {
+        font-size: 1.125em !important;
+    }
+    
+}
+
+
 .swal2-input:focus {
-    border-color: #01579B !important; /* Change border color on focus */
+    border-color: #01579B !important; 
     
 
 }
@@ -21,4 +46,8 @@
 }
 .swal2-styled.swal2-cancel {
     background-color: #ff0000 !important;
+}
+
+.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel {
+    transition: background-color 0.3s ease !important;
 }
