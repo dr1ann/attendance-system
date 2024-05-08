@@ -1,19 +1,4 @@
-//for the side bar functionality
-document.addEventListener('DOMContentLoaded', function () {
-    const drawerButton = document.querySelector('[data-drawer-toggle="default-sidebar"]');
-    const drawer = document.getElementById('default-sidebar');
 
-    drawerButton.addEventListener('click', function () {
-      drawer.classList.toggle('-translate-x-full');
-    });
-
-    // Close sidebar when clicking outside of it
-    document.addEventListener('click', function (event) {
-      if (!drawer.contains(event.target) && !drawerButton.contains(event.target)) {
-        drawer.classList.add('-translate-x-full');
-      }
-    });
-  });
 
   
 //for Editing Attendance Status of teachers

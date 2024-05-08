@@ -10,13 +10,14 @@
 </head>
 <body >
     <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow drop-shadow">
-        <div class="flex items-center justify-center lg:justify-start px-0 lg:px-4 py-2 lg:py-0">
+        <div class="flex items-center px-0 justify-center lg:px-4 py-2 lg:py-0">
+            
             <img src="/Images/notification.png" class="w-8 lg:w-16" alt="">
-            <div class="flex flex-col">
+                
                 <h1 class="text-sm lg:text-base pr-4 lg:pr-0 font-bold">NOTIFICATIONS</h1>
-            </div>
+                
         </div>
-        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 absolute z-20 p-2 my-2 ml-1 text-sm text-[#D9D9D9] rounded-lg lg:hidden hover:bg-transparent hover:shadow hover:drop-shadow">
+        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 lg:bottom-2 ms-3 absolute z-20 p-2 my-2  text-sm lg:text-xl text-white  hover:bg-opacity-40 rounded-lg hover:bg-white hover:shadow hover:drop-shadow" title="Close Sidebar">
             <span class="sr-only">Open sidebar</span>
             <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -71,7 +72,7 @@
     
     
  
- <div class="p-4 lg:ml-64 min-h-screen">
+    <div id="container" class="p-4 lg:ml-64 min-h-screen">
     <div class="p-0 lg:p-4 overflow-y-auto mt-[3em] lg:mt-[4em] rounded-lg ">
 <div class="lg:hidden">
         <ul class="grid grid-cols-1 relative gap-6">
@@ -225,7 +226,7 @@
     </div>
 </div>
  <footer style="border-top: 1px solid #CCCCCC;" class=" bg-white gap-2 p-2 mt-4 lg:mt-6 relative">
-      <div  class="   flex justify-between lg:absolute lg:left-[260px] lg:right-0">
+    <div id="footer" class="flex justify-between lg:absolute lg:left-[260px] lg:right-0">
     <p class="text-sm text-gray-500 py-4 px-1    lg:text-base font-semibold">
         ©2024 ADAS-STI, All Rights Reserved.
 
@@ -265,6 +266,7 @@
 </footer>
 <script src="/JS/notification-modal.js"></script>
 <script src="/JS/student-assistant.js"></script>
+<script src="/JS/sidebar.js"></script>
 </body>
 
   
