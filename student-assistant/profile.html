@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/output.css">
+   
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body >
     <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow drop-shadow">
-        <div class="flex items-center justify-center sm:justify-start px-0 sm:px-4 py-2 sm:py-0">
-            <img src="/Images/profile.png" class="w-8 sm:w-16" alt="">
-            <div class="flex flex-col">
-                <h1 class="text-sm sm:text-base pr-4 sm:pr-0 font-bold">PROFILE</h1>
-            </div>
+        <div class="flex items-center px-0 justify-center lg:px-4 py-2 lg:py-0">
+            
+            <img src="/Images/profile.png" class="w-8 lg:w-16" alt="">
+                
+                <h1 class="text-sm lg:text-base pr-4 lg:pr-0 font-bold">PROFILE</h1>
+                
         </div>
-        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 absolute z-20 p-2 my-2 ml-1 text-sm text-[#D9D9D9] rounded-lg sm:hidden hover:bg-transparent hover:shadow hover:drop-shadow">
+        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 lg:bottom-2 ms-1 lg:ms-3 absolute z-20 p-2 my-2  text-sm lg:text-xl text-white  hover:bg-opacity-40 rounded-lg hover:bg-white hover:shadow hover:drop-shadow" title="Close Sidebar">
             <span class="sr-only">Open sidebar</span>
             <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -24,7 +28,7 @@
         
     </header>
    
-    <aside id="default-sidebar" class="fixed top-0 sm:top-[4em] left-0 z-40 w-64 h-screen   transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <aside id="default-sidebar" class="fixed top-0 lg:top-[4em] left-0 z-40 w-64 h-screen   transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
         <div class="h-full  px-3 py-4 overflow-y-auto bg-gray-50 shadow drop-shadow ">
             <div  class="flex items-center ps-2.5 mb-5">
                 <img src="/Images/logo.png" class="w-20 h-auto me-3  object-contain" alt="logo" />
@@ -52,13 +56,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="mail.html" class="flex items-center p-2 rounded-lg hover:bg-gray-100  group">
+                    <a href="mail.html" class="flex items-center p-2 rounded-lg  group">
                         <img src="/Images/mail.png" class="w-10 h-auto" alt="">
                         <span class="flex-1 ms-3 whitespace-nowrap">Mail</span>
                     </a>
                 </li>
                 <li>
-                    <a href="profile.html" class="flex items-center p-2 rounded-lg shadow drop-shadow bg-[#D9D9D9]  group">
+                    <a href="profile.html" class="flex items-center p-2 rounded-lg shadow drop-shadow bg-[#D9D9D9]  hover:bg-gray-100  group">
                         <img src="/Images/profile.png" class="w-10 h-auto" alt="">
                         <span class="flex-1 ms-3 whitespace-nowrap">Profile</span>
                     </a>
@@ -69,126 +73,108 @@
     
     
  
- <div class="p-4 sm:ml-64 min-h-screen">
-    <div class="p-4 overflow-y-auto mt-[3em] sm:mt-[4em] rounded-lg ">
-    
+    <div id="container" class="p-4 lg:ml-64 min-h-screen">
+    <div class="px-0 py-4 overflow-y-auto mt-[3em] sm:mt-[4em] rounded-lg ">
+    <div style="border: 1px solid #D9D9D9;" class="mt-16 flex flex-col lg:flex-row items-center lg:items-start flex-wrap lg:flex-nowrap justify-center relative gap-1 lg:gap-10 shadow drop-shadow p-2 lg:p-10 w-fit mx-auto">
+        
+        <div class="flex flex-col items-center">
+        <img src="/Images/male-prof.png" class=" mt-[-90px] h-32 w-32 lg:h-40 lg:w-40" alt="">
+        
+        <div class="flex flex-row items-center justify-center gap-1">
+            <i class="fa-solid fa-mars text-blue-400 text-sm lg:text-base"></i>
+            <h3 class="text-sm lg:text-base">MALE</h3>
+        </div>
+        <div class="hidden lg:flex flex-col mt-10 gap-10"> 
+        <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class=" relative  flex flex-col">
+            <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Student ID:</span>
+        <input class=" py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="2000265934" readonly>
+        </label>
+        
+        <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative  flex flex-col">
+            <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Joined on:</span>
+        <input class="py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="May 3, 2024" readonly>
+        </label>
+    </div>
+     
+    </div>
+        <div class="flex flex-col gap-1 ">
+            
+          
+                <div class="flex justify-center flex-wrap gap-6 items-center">
+                <div class="flex flex-col items-center justify-center lg:items-start">
+            <h1 class="text-lg lg:text-xl font-bold text-center">James Adrian Denoy</h1>
+            <span class="text-xs text-[#333333] text-center">STUDENT ASSISTANT</span> 
+        </div>
+            <div class="flex flex-row px-2 items-center shadow drop-shadow mx-auto w-fit mt-2 gap-2 py-1 bg-[#D9D9D9] rounded-lg">
+                <button class=" font-semibold text-sm lg:text-base">Edit Profile</button>
+                <i class="fa-solid fa-pen-to-square text-xs lg:text-base"></i>
+          
+        </div>
+    </div>
+       
+            
+            <div class="grid grid-cols-2 gap-4 mt-6 lg:mt-10">   
+            <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Username:</span>
+            <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="jamesdenoy12" readonly>
+        </label>
 
-<div class="relative overflow-x-auto shadow sm:rounded-lg">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3 shadow drop-shadow">
-                    Product name
-                </th>
-                <th scope="col" class="px-6 py-3 shadow drop-shadow">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3 shadow drop-shadow">
-                    Category
-                </th>
-                <th scope="col" class="px-6 py-3 shadow drop-shadow">
-                    Price
-                </th>
-                <th scope="col" class="px-6 py-3 shadow drop-shadow">
-                    Action
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                <th scope="row" class="shadow drop-shadow px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4 shadow drop-shadow">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                </td>
-            </tr>
-            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Microsoft Surface Pro
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                </td>
-            </tr>
-            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Mouse 2
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                </td>
-            </tr>
-            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Google Pixel Phone
-                </th>
-                <td class="px-6 py-4">
-                    Gray
-                </td>
-                <td class="px-6 py-4">
-                    Phone
-                </td>
-                <td class="px-6 py-4">
-                    $799
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple Watch 5
-                </th>
-                <td class="px-6 py-4">
-                    Red
-                </td>
-                <td class="px-6 py-4">
-                    Wearables
-                </td>
-                <td class="px-6 py-4">
-                    $999
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+            <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Password:</span>
+        <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="password" value="jamesdenoy12" readonly>
+    </label>
+    </div>
+
+          <div class="grid grid-cols-2 gap-4 mt-6 lg:mt-10"> 
+        <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+            <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Academic level:</span>
+        <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="Tertiary" readonly>
+    </label>
+
+    <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+        <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Section:</span>
+    <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value=" IT1201" readonly>
+</label>
 </div>
 
+<div class="grid grid-cols-2 gap-4 mt-6 lg:mt-10"> 
+<label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+    <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Program :</span>
+<input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="BSIT" readonly>
+</label>
+<label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+    <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Year level :</span>
+<input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="1Y2" readonly>
+</label>
+</div>
+
+<div class="lg:hidden grid grid-cols-2 gap-4 mt-6 lg:mt-10"> 
+    <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+        <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Student ID:</span>
+    <input class="text-sm py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="2000265934" readonly>
+    </label>
+    
+    <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+        <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Joined on:</span>
+    <input class="text-sm py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="May 3, 2024" readonly>
+    </label>
+    </div>
+
+
+<div class="text-white w-fit mx-auto shadow drop-shadow flex flex-row px-2 items-center mt-5 me-3 gap-2 py-1 bg-[#ff0000] rounded-lg">
+    <button class=" font-semibold text-sm lg:text-base">Logout</button>
+    <i class="fa-solid fa-right-from-bracket text-xs lg:text-base"></i>
+</div>
+        </div>
+       
+      
+      
+    </div>
 </div>
  </div>
  
  <footer style="border-top: 1px solid #CCCCCC;" class=" bg-white gap-2 p-2 mt-4 lg:mt-6 relative">
-      <div  class="   flex justify-between sm:absolute sm:left-[260px] sm:right-0">
+    <div id="footer" class="flex justify-between lg:absolute lg:left-[260px] lg:right-0">
     <p class="text-sm text-gray-500 py-4 px-1    lg:text-base font-semibold">
         ©2024 ADAS-STI, All Rights Reserved.
 
@@ -232,4 +218,4 @@
 
   
   
-</html>
+</html>	
