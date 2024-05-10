@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/CSS/output.css">
 </head>
 <body >
-    <header class="fixed w-full top-0 left-0 z-10 bg-[#01579B] text-white shadow drop-shadow">
+    <div style="border-left: 1px solid #D9D9D9; border-right: 1px solid #D9D9D9 " class="max-w-[2050px] mx-auto">
+        <header class="fixed w-full max-w-[2050px] top-0 left-[max(0px,calc(50%-64.0625rem))] z-20 bg-[#01579B] text-white shadow drop-shadow">
         <div class="flex items-center px-0 justify-center lg:px-4 py-2 lg:py-0">
             
             <img src="/Images/mail.png" class="w-8 lg:w-16" alt="">
@@ -25,7 +26,7 @@
         
     </header>
    
-    <aside id="default-sidebar" class="fixed top-0 lg:top-[4em] left-0 z-40 w-64 h-screen   transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
+    <aside id="default-sidebar" class="fixed top-0 lg:top-[4rem] left-[max(0px,calc(50%-64.0625rem))] z-40 w-64 h-screen   transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
         <div class="h-full  px-3 py-4 overflow-y-auto bg-gray-50 shadow drop-shadow ">
             <div  class="flex items-center ps-2.5 mb-5">
                 <img src="/Images/logo.png" class="w-20 h-auto me-3  object-contain" alt="logo" />
@@ -157,7 +158,7 @@
 </div>
  </div>
  
- <footer style="border-top: 1px solid #CCCCCC;" class=" bg-white gap-2 p-2 mt-4 lg:mt-6 relative">
+ <footer style="border-top: 1px solid #D9D9D9;" class=" bg-white gap-2 px-2 mt-4 lg:mt-6 relative">
     <div id="footer" class="flex justify-between lg:absolute lg:left-[260px] lg:right-0">
     <p class="text-sm text-gray-500 py-4 px-1    lg:text-base font-semibold">
         ©2024 ADAS-STI, All Rights Reserved.
@@ -198,6 +199,7 @@
 </footer>
 <script src="/JS/student-assistant.js"></script>
 <script src="/JS/sidebar.js"></script>
+</div>
 </body>
 
   
