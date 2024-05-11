@@ -86,44 +86,56 @@
  <div id="container" class="p-4 lg:ml-64 min-h-screen">
     <div class="p-0 lg:p-4 overflow-y-auto  mt-[3em] lg:mt-[4em] rounded-lg ">
        
-       
+        <div class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto my-4  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+            <i class="fa-solid fa-circle-plus text-xs lg:text-sm text-center text-[#2C384A]"></i>
+            <span class="font-semibold text-sm text-center">Add new Student Assistant</span>
+          
+     
+      
+   </div>
         <div class="lg:hidden">
        
-        <div class="flex flex-row items-center rounded-lg gap-2 shadow drop-shadow p-2 bg-[#01579B] w-fit mb-4">
+        <!-- <div class="flex flex-row items-center rounded-lg gap-2 shadow drop-shadow p-2 bg-[#01579B] w-fit mb-4">
             <img src="/Images/calendar.png" class="w-6 object-contain h-auto" alt="">
             <span class=" text-sm  font-bold text-white">MAY 1, 2024</span>
-        </div> 
+        </div>  -->
         <ul class="grid grid-cols-1 relative gap-6">
             
           
 
             <li style="border: 1px solid #D9D9D9;" class="flex flex-wrap flex-col items-start gap-3 p-3 rounded-lg shadow drop-shadow">
                 
-                <img src="/Images/present.png" class="w-8 h-auto mb-20 absolute right-0 top-0 me-4 py-2" alt="present">
-                <img src="/Images/female-prof.png" class="flex w-16 px-2 h-auto"  alt="">
-                <div class="flex flex-col ">
-                    <h3 class="font-bold text-lg">Windy Cagulada</h3>
-                    <h4 class="text-xs mt-2 text-[#333333]">Scheduled Time: <br></h4> 
-                    <div class="space-x-6">
-                 <span class="text-xs  font-semibold">In: 7:30 AM</span>
-                 <!-- <span class="text-[#fd7e14] font-semibold">(30 mins late)</span> -->
-                 <span class="text-xs font-semibold">Out: 9:00 AM</span>
                 
-                </div>
+                <img src="/Images/male-prof.png" class="flex w-16 px-2 h-auto"  alt="">
+                <div class="flex flex-col ">
+                    <h3 class="font-bold text-lg">James Adrian Denoy</h3>
+                    <h4 class="text-xs mt-2 text-[#333333]">Student ID: <br></h4> 
+                    
+                    <div class="flex flex-row items-center">
+                 
+                 <span class="text-sm  font-semibold">02000265934</span>
+                 <div class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-3   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                    <i class="fa-solid fa-circle-info text-xs text-center text-[#2C384A]"></i>
+                    <span class="font-semibold text-sm text-center ">More Info</span>
+                  
+             
               
-               <span class="text-sm mt-4 font-semibold">ROOM 315 (National Service Training Program)</span>
-                <button id="editBtn" class="flex shadow drop-shadow flex-row gap-1 items-center justify-start mt-4 bg-[#D9D9D9] w-fit px-2 py-1 rounded-lg ">
-                    <span class="text-sm font-semibold">Mark Attendance</span>
-                    <i class="fa-solid fa-pen-to-square text-xs "></i>
-                </button>
-                <div id="editContainer" class="hidden  items-start flex-col  gap-2  mt-4">
-                    <h3 class="attendance-indicator hide-indicator text-sm text-center font-semibold">Choose Attendance Color:</h3>
-                   <div class="flex flex-row gap-4 justify-center items-center">
-                    <img id="present" src="/Images/present.png" class="attendance-indicator hide-indicator cursor-pointer w-8 h-auto" alt="present">
-                    <img id="late" src="/Images/late.png" class="attendance-indicator hide-indicator cursor-pointer w-8 h-auto" alt="late">
-                    <img id="absent" src="/Images/absent.png" class="attendance-indicator hide-indicator cursor-pointer w-8 h-auto" alt="absent">
+           </div>
                 </div>
-            </div>
+                <div class="flex gap-6 flex-row flex-wrap mt-5 items-center">
+                <div class="bg-[#D9D9D9] shadow drop-shadow w-fit   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                    <i class="fa-solid fa-calendar-days text-center text-xs text-[#2C384A]"></i>
+                    <span class="font-semibold text-sm text-center ">Schedules</span>
+                
+           </div>
+           <div class="bg-[#D9D9D9] shadow drop-shadow w-fit   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+            <i class="fa-solid fa-chart-line text-xs text-center text-[#2C384A]"></i>
+            <span class="font-semibold text-sm text-center">Activity Log</span>
+        
+   </div>
+        </div>
+              
+              
             </li>
 
         </ul>
@@ -175,7 +187,7 @@
                             <span class="text-xs mt-2 text-[#333333]">Joined on: <br></span> 
                             <h4 class="font-semibold text-sm">May 03, 2024</h4>
                             <div class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto mt-2  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
-                                <i class="fa-solid fa-circle-info text-sm text-center"></i>
+                                <i class="fa-solid fa-circle-info text-sm text-center text-[#2C384A]"></i>
                                 <span class="font-semibold text-sm text-center">More Info</span>
                               
                          
@@ -186,7 +198,7 @@
 
             <td class="bg-gray-100 text-center  h-full shadow drop-shadow px-4 py-2 text-base">
                 <div class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
-                    <i class="fa-solid fa-calendar-days text-center text-sm"></i>
+                    <i class="fa-solid fa-calendar-days text-center text-sm text-[#2C384A]"></i>
                     <span class="font-semibold text-sm text-center">View Schedules</span>
                   
              
@@ -195,7 +207,7 @@
             </td>
             <td class="bg-gray-100  h-full shadow drop-shadow px-4 py-2">
                 <div class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
-                    <i class="fa-solid fa-chart-line text-sm text-center"></i>
+                    <i class="fa-solid fa-chart-line text-sm text-center text-[#2C384A]"></i>
                     <span class="font-semibold text-sm text-center">View Activity Log</span>
                   
              
