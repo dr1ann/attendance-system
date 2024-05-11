@@ -5,7 +5,7 @@ const statusIcon = document.getElementById('statusIcon');
 
 showNotifModal.addEventListener('click', (e) => {
     e.preventDefault();
-    const modalContainer = document.getElementById('modalContainer');
+    const modalContainer = document.getElementById('notifModalContainer');
 
     modalContainer.classList.remove('hidden');
     modalContainer.classList.add('flex');
@@ -19,7 +19,7 @@ showNotifModal.addEventListener('click', (e) => {
 
 closeNotifModal.addEventListener('click', (e) => {
     e.preventDefault();
-    const modalContainer = document.getElementById('modalContainer');
+    const modalContainer = document.getElementById('notifModalContainer');
 
     modalContainer.classList.remove('flex');
     modalContainer.classList.add('hidden');

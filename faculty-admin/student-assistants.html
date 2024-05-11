@@ -86,15 +86,15 @@
  <div id="container" class="p-4 lg:ml-64 min-h-screen">
     <div class="p-0 lg:p-4 overflow-y-auto  mt-[3em] lg:mt-[4em] rounded-lg ">
        
-        <div class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto my-4  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
-            <i class="fa-solid fa-circle-plus text-xs lg:text-sm text-center text-[#2C384A]"></i>
-            <span class="font-semibold text-sm text-center">Add new Student Assistant</span>
-          
-     
-      
-   </div>
-        <div class="lg:hidden">
        
+        <div class="lg:hidden">
+            <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-4  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                <i class="fa-solid fa-user-plus text-xs lg:text-sm text-center text-[#2C384A]"></i>
+                <span id="showAdd" class="font-semibold text-sm text-center">Add New Student Assistant</span>
+              
+         
+          
+       </button>
         <!-- <div class="flex flex-row items-center rounded-lg gap-2 shadow drop-shadow p-2 bg-[#01579B] w-fit mb-4">
             <img src="/Images/calendar.png" class="w-6 object-contain h-auto" alt="">
             <span class=" text-sm  font-bold text-white">MAY 1, 2024</span>
@@ -103,10 +103,18 @@
             
           
 
-            <li style="border: 1px solid #D9D9D9;" class="flex flex-wrap flex-col items-start gap-3 p-3 rounded-lg shadow drop-shadow">
-                
-                
+            <li style="border: 1px solid #D9D9D9;" class="flex flex-wrap flex-col  gap-3 p-3 rounded-lg shadow drop-shadow">
+              <div class="flex flex-row justify-between items-center gap-8">
                 <img src="/Images/male-prof.png" class="flex w-16 px-2 h-auto"  alt="">
+
+                <button class=" shadow drop-shadow rounded-lg px-2 py-1  cursor-pointer flex  justify-center flex-row items-center gap-1   text-white bg-[#ff0000]">
+                    <i  class="fa-solid fa-user-minus text-xs text-center "></i>
+                    <span class="text-sm text-center">Remove Account</span>
+                </button>
+              </div>
+                
+
+                
                 <div class="flex flex-col ">
                     <h3 class="font-bold text-lg">James Adrian Denoy</h3>
                     <h4 class="text-xs mt-2 text-[#333333]">Student ID: <br></h4> 
@@ -114,25 +122,25 @@
                     <div class="flex flex-row items-center">
                  
                  <span class="text-sm  font-semibold">02000265934</span>
-                 <div class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-3   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                 <button id="showInfo" class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-3   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
                     <i class="fa-solid fa-circle-info text-xs text-center text-[#2C384A]"></i>
                     <span class="font-semibold text-sm text-center ">More Info</span>
                   
              
               
-           </div>
+           </button>
                 </div>
                 <div class="flex gap-6 flex-row flex-wrap mt-5 items-center">
-                <div class="bg-[#D9D9D9] shadow drop-shadow w-fit   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                <button class="bg-[#D9D9D9] shadow drop-shadow w-fit   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
                     <i class="fa-solid fa-calendar-days text-center text-xs text-[#2C384A]"></i>
                     <span class="font-semibold text-sm text-center ">Schedules</span>
                 
-           </div>
-           <div class="bg-[#D9D9D9] shadow drop-shadow w-fit   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+           </button>
+           <button id="showActivity" class="bg-[#D9D9D9] shadow drop-shadow w-fit   rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
             <i class="fa-solid fa-chart-line text-xs text-center text-[#2C384A]"></i>
             <span class="font-semibold text-sm text-center">Activity Log</span>
         
-   </div>
+   </button>
         </div>
               
               
@@ -143,7 +151,16 @@
     </div>
 
     <!-- for large screens -->
-    <table class="table-auto rounded-lg w-fit mx-auto text-black text-left rtl:text-right hidden lg:block">
+    <div class=" hidden lg:block w-fit mx-auto">
+        <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-4  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+            <i class="fa-solid fa-user-plus text-base text-center text-[#2C384A]"></i>
+            <span class="font-semibold text-base text-center">Add New Student Assistant</span>
+          
+     
+      
+   </button>
+   
+    <table class="table-auto rounded-lg w-fit mx-auto text-black text-left rtl:text-right">
         <thead class="bg-[#2C384A] shadow drop-shadow rounded-lg">
             <tr class=" shadow drop-shadow ">
                 <th scope="col" class="px-4 py-2 text-center text-base text-white shadow drop-shadow">NAME & ID</th>
@@ -152,10 +169,8 @@
               
                
                 <th scope="col" class="text-center px-4 py-2 text-base text-white shadow drop-shadow">SCHEDULES</th>
-                <th scope="col" class="px-4 py-2 text-center text-white text-base shadow drop-shadow">
-                    ACTIVITY
-                </th>
-                
+                <th scope="col" class="px-4 py-2 text-center text-white text-base shadow drop-shadow">ACTIVITY</th>
+                <th scope="col" class="px-4 py-2 text-center text-white text-base shadow drop-shadow">ACTION</th>
            
             </tr>
         </thead>
@@ -186,51 +201,362 @@
                           
                             <span class="text-xs mt-2 text-[#333333]">Joined on: <br></span> 
                             <h4 class="font-semibold text-sm">May 03, 2024</h4>
-                            <div class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto mt-2  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                            <button class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto mt-2  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
                                 <i class="fa-solid fa-circle-info text-sm text-center text-[#2C384A]"></i>
                                 <span class="font-semibold text-sm text-center">More Info</span>
                               
                          
                           
-                       </div>
+                       </button>
                     </div>
                    </th>
 
             <td class="bg-gray-100 text-center  h-full shadow drop-shadow px-4 py-2 text-base">
-                <div class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                <button class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
                     <i class="fa-solid fa-calendar-days text-center text-sm text-[#2C384A]"></i>
                     <span class="font-semibold text-sm text-center">View Schedules</span>
                   
              
               
-           </div>
+           </button>
             </td>
             <td class="bg-gray-100  h-full shadow drop-shadow px-4 py-2">
-                <div class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                <button class="bg-[#D9D9D9] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
                     <i class="fa-solid fa-chart-line text-sm text-center text-[#2C384A]"></i>
                     <span class="font-semibold text-sm text-center">View Activity Log</span>
                   
              
               
-           </div>
+           </button>
 
-                <div id="editContainer" class="hidden flex-wrap items-center flex-row justify-center gap-4">
-                    <h3 class="attendance-indicator hide-indicator text-sm text-center font-semibold">Choose Attendance Color:</h3>
-                    <img id="present" src="/Images/present.png" class="attendance-indicator hide-indicator cursor-pointer w-8 h-auto" alt="present">
-                    <img id="late" src="/Images/late.png" class="attendance-indicator hide-indicator cursor-pointer w-8 h-auto" alt="late">
-                    <img id="absent" src="/Images/absent.png" class="attendance-indicator hide-indicator cursor-pointer w-8 h-auto" alt="absent">
-                </div>
+              
+            </td>
+
+            <td class="bg-gray-100  h-full shadow drop-shadow px-4 py-2">
+                <button class="text-white bg-[#ff0000] shadow drop-shadow w-fit mx-auto  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+                    <i class="fa-solid fa-user-minus text-sm text-center "></i>
+                    <span class="font-semibold text-sm text-center">Remove Account</span>
+                  
+             
+              
+           </button>
+
+              
             </td>
              </tr>
 
              
+             
 
         </tbody>
     </table>
-   
+</div>
 </div>
  </div>
  
+
+
+<!-- More Info modal -->
+<div id="infoModalContainer" data-modal-backdrop="info" tabindex="-1" aria-hidden="true" class="hidden  z-[99999] h-screen backdrop-blur-sm m-auto overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0  justify-center items-center w-full md:inset-0  max-h-full">
+    <div class="relative p-4 w-full max-w-[46rem]  m-auto ">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow ">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t gap-2">
+                <h3 class="text-lg lg:text-xl font-bold text-gray-900 ">
+                    James Adrian Denoy's Info
+                </h3>
+                <button id="closeInfo" type="button" class="text-gray-400 bg-transparent hover:bg-gray-300 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  data-modal-hide="info-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+               
+                <div  class=" rounded-lg flex flex-col lg:flex-row items-center  flex-wrap lg:flex-nowrap justify-center relative gap-1 lg:gap-10  p-2 lg:p-4 w-fit mx-auto">
+        
+                    <div class="flex flex-col items-center">
+                    <img src="/Images/male-prof.png" class="  h-32 w-32 lg:h-40 lg:w-40" alt="">
+                    
+                    <div class="flex flex-row items-center justify-center gap-1">
+                        <i class="fa-solid fa-mars text-blue-400 text-sm lg:text-base"></i>
+                        <h3 class="text-sm lg:text-base">MALE</h3>
+                    </div>
+                 
+                 
+                </div>
+                    <div class="flex flex-col gap-1 ">
+                        
+                      
+                            <div class="flex justify-center flex-col lg:flex-row flex-wrap gap-2 lg:gap-6 items-center">
+                            <div class="flex flex-col items-center justify-center lg:items-start">
+                        <h1 class="text-lg lg:text-xl font-bold text-center">James Adrian Denoy</h1>
+                        <span class="text-xs text-[#333333] text-center">STUDENT ASSISTANT</span> 
+                    </div>
+                        <div class="flex flex-row px-2 cursor-pointer items-center shadow drop-shadow mx-auto w-fit mt-2 gap-1 py-1 bg-[#D9D9D9] rounded-lg">
+                            <i class="fa-solid fa-pen-to-square text-xs lg:text-sm text-[#2C384A]"></i>
+                            <span class=" font-semibold text-sm lg:text-base">Edit Profile</span>
+                          
+                      
+                    </div>
+                </div>
+                   
+               
+                 
+            
+                      <div class="grid grid-cols-2 gap-4 mt-8"> 
+                    <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                        <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Academic level:</span>
+                    <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="Tertiary" readonly>
+                </label>
+            
+                <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                    <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Section:</span>
+                <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value=" IT1201" readonly>
+            </label>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mt-6"> 
+            <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Program :</span>
+            <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="BSIT" readonly>
+            </label>
+            <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Year level :</span>
+            <input class="text-sm lg:text-base py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="1Y2" readonly>
+            </label>
+            </div>
+            
+            <div class=" grid grid-cols-2 gap-4 mt-6"> 
+                <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                    <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Student ID:</span>
+                <input class="text-sm py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="2000265934" readonly>
+                </label>
+                
+                <label style="border: 1px solid #D9D9D9; border-radius:.5rem;" for="" class="relative flex flex-col">
+                    <span  class="absolute top-[-9px] h-fit mx-2 px-1 rounded-lg  bg-white z-20 text-xs text-[#333333]">Joined on:</span>
+                <input class="text-sm py-2 px-3 shadow drop-shadow rounded-lg font-semibold" id="" type="text" value="May 3, 2024" readonly>
+                </label>
+                </div>
+            
+            
+            
+                    </div>
+                   
+                  
+                  
+                </div>
+
+                
+           
+       
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of more info modal -->
+
+<!-- Activity Log modal -->
+<div id="activityModalContainer" data-modal-backdrop="activity" tabindex="-1" aria-hidden="true" class="hidden  z-[99999] h-screen backdrop-blur-sm m-auto overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0  justify-center items-center w-full md:inset-0  max-h-full">
+    <div class="relative p-4 w-full max-w-[46rem]  m-auto ">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow ">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t gap-2">
+                <h3 class="text-lg lg:text-xl font-bold text-gray-900 ">
+                    James Adrian Denoy's Activity Log
+                </h3>
+                <button id="closeActivity" type="button" class="text-gray-400 bg-transparent hover:bg-gray-300 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  data-modal-hide="activity-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4 text-white">
+                <table class="w-full text-left rtl:text-right">
+                    <thead>
+                        <tr class="bg-[#2C384A]">
+                           
+                            <th scope="col" id="activityHeader" class=" text-base lg:text-lg px-6 py-3">Activity</th>
+                            <th scope="col" id="dateTimeHeader" class=" text-base lg:text-lg px-6 py-3">Date & Time</th>
+                        </tr>
+                    </thead>
+                    <tbody  >
+                            <tr>
+                           <th scope="row" class="font-bold px-6 py-3 text-sm  lg:text-base bg-[#01579B] h-full  shadow drop-shadow  ">
+                           LOGGED IN
+                           </th>
+                           <td  class="px-6 py-3 text-sm lg:text-base bg-[#01579B]  h-full shadow drop-shadow  ">
+                            04/27/2024 03:30 PM
+                           </td>
+                        </tr>
+    
+    
+                        <tr>
+                            <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#ff0000] h-full  shadow drop-shadow  ">
+                                Marked Windy Cagulada as <b>ABSENT</b>
+                               </th>
+                               <td  class="px-6 py-3 text-sm lg:text-base bg-[#ff0000]  h-full shadow drop-shadow  ">
+                                04/27/2024 03:30 PM
+                               </td>
+                        </tr>
+    
+                      
+    
+                        <tr>
+                            <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#fd7e14] h-full  shadow drop-shadow  ">
+                                Marked Joshua Baban as <b>30 MINS LATE</b>
+                               </th>
+                               <td  class="px-6 py-3 text-sm lg:text-base bg-[#fd7e14]  h-full shadow drop-shadow  ">
+                                04/27/2024 03:30 PM
+                               </td>
+                        </tr>
+    
+                        <tr>
+                            <th scope="row" class="px-6 py-3 text-sm font-normal lg:text-base bg-[#28a745] h-full  shadow drop-shadow  ">
+                                Marked Humabona Gonzales as <b>PRESENT</b>
+                               </th>
+                               <td  class="px-6 py-3 text-sm lg:text-base bg-[#28a745]  h-full shadow drop-shadow  ">
+                                04/27/2024 03:30 PM
+                               </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+
+                
+           
+       
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of Activity Log modal -->
+
+<!-- Add new S.A modal -->
+<div id="addModalContainer" data-modal-backdrop="add" tabindex="-1" aria-hidden="true" class="hidden  z-[99999] h-screen backdrop-blur-sm m-auto overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0  justify-center items-center w-full md:inset-0  max-h-full">
+    <div class="relative p-4 w-full max-w-[46rem]  m-auto ">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow ">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t gap-2">
+                <h3 class="text-lg lg:text-xl font-bold text-gray-900 ">
+                    <i class="fa-solid fa-user-plus text-base lg:text-lg text-center text-[#2C384A]"></i> Add New Student Assistant
+                </h3>
+                <button id="closeAdd" type="button" class="text-gray-400 bg-transparent hover:bg-gray-300 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  data-modal-hide="add-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+               
+                <div class="grid grid-cols-2 gap-4 mt-2"> 
+                    <div class="rounded-lg relative">
+                        <input autocomplete="off" type="text" id="fName" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                        <label for="fName" class="tracking-wide absolute text-xs lg:text-sm  text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Full name</label>
+                    </div>
+                    <div class="rounded-lg relative">
+                        <input autocomplete="off" type="text" id="yearLvl" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                        <label for="yearLvl" class="tracking-wide absolute text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Year Level</label>
+                    </div>
+            
+                
+            </div>
+                <div class="grid grid-cols-2 gap-4 mt-6"> 
+                    <div class="rounded-lg relative">
+                        <input autocomplete="off" type="text" id="username" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                        <label for="username" class="tracking-wide absolute text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Username</label>
+                    </div>
+                   
+                    <div class="rounded-lg relative">
+                        <input autocomplete="off" type="password" id="password" class="text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                        <label for="password" class="tracking-wide absolute  text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Password</label>
+                    </div>
+            
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mt-6"> 
+                <div class="rounded-lg relative">
+                    <input autocomplete="off" type="text" id="acadLvl" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                    <label for="acadLvl" class="tracking-wide absolute text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Academic Level</label>
+                </div>
+
+                <div class="rounded-lg relative">
+                    <input autocomplete="off" type="text" id="section" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                    <label for="section" class="tracking-wide absolute  text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Section</label>
+                </div>
+            
+            
+            </div>
+            
+            <div class=" grid grid-cols-2 gap-4 mt-6"> 
+                <div class="rounded-lg relative">
+                    <input autocomplete="off" type="text" id="program" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                    <label for="program" class="tracking-wide absolute text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Program</label>
+                </div>
+
+                <div class="rounded-lg relative">
+                    <input autocomplete="off" type="text" id="studID" class=" text-sm lg:text-base block py-2 px-3 w-full  text-black bg-transparent rounded-lg border-[1px] border-[#D9D9D9] appearance-none  focus:outline-none focus:ring-0 focus:border-[#01579B] peer" placeholder=" " />
+                    <label for="studID" class="tracking-wide absolute text-xs lg:text-sm text-[#888]  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-[#01579B]  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Student ID</label>
+                </div>
+              
+              
+                </div>
+                <div class="flex justify-center items-center   gap-4 mt-6"> 
+                   
+                   
+
+                    
+                    <div id="genderContainer" class="border-[#D9D9D9] border-[1px]  rounded-lg relative flex flex-row px-3  justify-start items-center">
+                        <!-- Gender label -->
+                        <label for="gender" id="genderLabel" class="tracking-wide absolute text-sm text-[#888] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#01579B] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Gender</label>
+                    
+                        <!-- Gender options -->
+                        <div class=" flex items-center flex-row justify-center p-4 flex-wrap space-x-4">
+                            <!-- Male option -->
+                            <label class="flex items-center gap-1 ">
+                                <input type="radio" class="form-radio text-[#01579B]" name="gender" value="male">
+                                <span class="text-sm lg:text-base text-[#2C384A] text-center">Male</span>
+                            </label>
+                    
+                            <!-- Female option -->
+                            <label class="flex items-center gap-1">
+                                <input type="radio" class="form-radio text-[#01579B]" name="gender" value="female">
+                                <span class="text-sm lg:text-base text-[#2C384A] text-center">Female</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    
+                  
+                    </div>
+               
+                <div class="flex flex-row px-2 cursor-pointer items-center shadow drop-shadow mx-auto w-fit my-5 gap-1 py-1 bg-[#D9D9D9] rounded-lg">
+                    <i class="fa-solid fa-user-plus text-xs lg:text-base text-center text-[#2C384A]"></i>
+                    <span class=" font-semibold text-sm lg:text-base ">Add Student</span>
+                  
+              
+            </div>
+            
+                    </div>
+                
+           
+       
+            </div>
+        </div>
+        
+    </div>
+   
+</div>
+<!-- endd of add new S.A modal -->
  <footer  style="border-top: 1px solid #D9D9D9; " class=" bg-white gap-2 px-2 mt-4 lg:mt-6 relative">
       <div id="footer" class="flex justify-between lg:absolute lg:left-[260px] lg:right-0">
     <p class="text-sm text-gray-500 py-4 px-1    lg:text-base font-semibold">
@@ -272,8 +598,9 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="/JS/student-assistant.js"></script>
+    
     <script src="/JS/sidebar.js"></script>
+    <script src="/JS/faculty-admin-modals.js"></script>
 </div>
 </body>
 
