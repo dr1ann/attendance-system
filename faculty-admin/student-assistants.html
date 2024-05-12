@@ -88,12 +88,10 @@
        
        
         <div class="lg:hidden">
-            <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-4  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+          
+            <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-6  rounded-lg px-3 py-1 mr-2 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
                 <i class="fa-solid fa-user-plus text-xs lg:text-sm text-center text-[#2C384A]"></i>
                 <span id="showAdd" class="font-semibold text-sm text-center">Add New Student Assistant</span>
-              
-         
-          
        </button>
         <!-- <div class="flex flex-row items-center rounded-lg gap-2 shadow drop-shadow p-2 bg-[#01579B] w-fit mb-4">
             <img src="/Images/calendar.png" class="w-6 object-contain h-auto" alt="">
@@ -152,7 +150,37 @@
 
     <!-- for large screens -->
     <div class=" hidden lg:block w-fit mx-auto">
-        <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-4  rounded-lg px-2 py-1 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
+        <div style="border: 1px solid #D9D9D9;" class="flex flex-col gap-6 justify-center mx-auto items-center mb-10 lg:mb-6 w-fit p-4 rounded-lg shadow drop-shadow ">
+            <div class="flex  items-center justify-center gap-1">
+            <i class="fa-solid fa-print text-lg text-[#2C384A]"></i>
+            <h1 class="font-bold text-lg text-center">PRINT ALL</h1>
+        </div>
+           
+            <ul class="grid grid-cols-3 gap-6 justify-center items-center">
+           
+            <li class="cursor-pointer gap-1 flex items-center justify-center shadow drop-shadow p-2 rounded-lg bg-[#D9D9D9]">
+               
+                    <i class="fa-solid fa-circle-info text-xl text-[#2C384A]"></i>
+                    <span  class="font-semibold text-base text-center">Info</span>
+                
+            </li>
+            <li class="cursor-pointer flex gap-1 items-center justify-center shadow drop-shadow p-2 rounded-lg bg-[#D9D9D9]">
+               
+                <i class="fa-solid fa-calendar-days text-xl text-[#2C384A]"></i>
+                <span  class="font-semibold text-base text-center">Schedules</span>
+            
+        </li>
+        <li class="cursor-pointer flex gap-1 items-center justify-center shadow drop-shadow p-2 rounded-lg bg-[#D9D9D9]">
+               
+            <i class="fa-solid fa-chart-line text-xl text-[#2C384A]"></i>
+            <span  class="font-semibold text-base text-center">Activity Log</span>
+        
+    </li>
+            
+        </ul>
+        </div>
+       
+        <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-6   rounded-lg px-3 py-1 mr-2 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
             <i class="fa-solid fa-user-plus text-base text-center text-[#2C384A]"></i>
             <span class="font-semibold text-base text-center">Add New Student Assistant</span>
           
@@ -361,7 +389,7 @@
 
 <!-- Activity Log modal -->
 <div id="activityModalContainer" data-modal-backdrop="activity" tabindex="-1" aria-hidden="true" class="hidden  z-[99999] h-screen backdrop-blur-sm m-auto overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0  justify-center items-center w-full md:inset-0  max-h-full">
-    <div class="relative p-4 w-full max-w-[46rem]  m-auto ">
+    <div class="relative p-4 w-full max-w-[50rem]  m-auto ">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow ">
             <!-- Modal header -->
@@ -377,9 +405,13 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <div class="p-4 md:p-5 space-y-4 text-white">
+            <div class="p-4 pt-1 md:p-5 space-y-4 text-white">
+                <button class="hidden lg:flex bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto mr-2    rounded-lg px-3 py-1 cursor-pointer   justify-center flex-row items-center gap-1" > 
+                    <i class="fa-solid fa-print text-base text-[#2C384A]"></i>
+                    <span id="showAdd" class="font-semibold text-base text-center text-black">Print</span>
+            </button>
                 <table class="w-full text-left rtl:text-right">
-                    <thead>
+                    <thead> 
                         <tr class="bg-[#2C384A]">
                            
                             <th scope="col" id="activityHeader" class=" text-base lg:text-lg px-6 py-3">Activity</th>
