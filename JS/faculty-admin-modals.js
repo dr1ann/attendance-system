@@ -73,11 +73,12 @@ closeAddModal.addEventListener('click', (e) => {
     modalContainer.classList.add('hidden');
 })
 
+// when the gender input form is focused
 const genderLabel = document.getElementById('genderLabel');
 const genderContainer = document.getElementById('genderContainer');
-// Add event listener for focusin event
+
 genderContainer.addEventListener('focusin', () => {
-    // Add class to change color when focused
+
     genderLabel.classList.remove('text-[#888]');
     genderLabel.classList.add('text-[#01579B]');
     genderContainer.classList.remove('border-[#D9D9D9]')
@@ -85,7 +86,7 @@ genderContainer.addEventListener('focusin', () => {
     
 });
 
-// Add event listener for focusout event
+
 genderLabel.addEventListener('focusout', () => {
     // Remove class to revert color when focus is lost
     genderLabel.classList.remove('text-[#01579B]');
