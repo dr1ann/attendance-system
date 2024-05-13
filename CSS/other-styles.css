@@ -56,17 +56,23 @@
 }
 
 ::-webkit-scrollbar {
-    height: .6rem;
-    width: .6rem;
+    height: .4rem;
+    width: .4rem;
 }
-
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track  {
+@media (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        height: .6rem;
+        width: .6rem;
+    }
+}
+::-webkit-scrollbar-thumb {
     border-radius: 6px;
     height: .5rem;
     background: #a0a0a0;
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #808080;
 }
