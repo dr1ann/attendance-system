@@ -10,6 +10,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="/CSS/other-styles.css">
+   
+
     <style>
         .hide-indicator {
          display: none; 
@@ -22,9 +24,9 @@
         <header class="fixed w-full max-w-[2050px] top-0 left-[max(0px,calc(50%-64.0625rem))] z-20 bg-[#01579B] text-white shadow drop-shadow">
         <div class="flex items-center px-0 justify-center lg:px-4 py-2 lg:py-0">
             
-            <img src="/Images/attendance.png" class="w-8 lg:w-16" alt="">
+            <img src="/Images/attendance-history.png" class="w-8 lg:w-16" alt="">
                 
-                <h1 class="text-sm lg:text-base pr-4 lg:pr-0 font-bold">ATTENDANCE</h1>
+                <h1 class="text-sm lg:text-base pr-4 lg:pr-0 font-bold">ATTENDANCE HISTORY</h1>
                 
         </div>
         <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="bottom-0 lg:bottom-2 ms-1 lg:ms-3 absolute z-20 p-2 my-2  text-sm lg:text-xl text-white  hover:bg-opacity-40 rounded-lg hover:bg-white hover:shadow hover:drop-shadow" title="Close Sidebar">
@@ -54,13 +56,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="attendance.html" class="flex items-center p-2 shadow drop-shadow rounded-lg bg-[#D9D9D9]  group">
+                    <a href="attendance.html" class="flex items-center p-2  hover:bg-gray-100   group">
                         <img src="/Images/attendance.png" class="w-10 h-auto" alt="">
                         <span class="ms-3">Attendance</span>
                     </a>
                 </li>
                 <li>
-                    <a href="attendance-history.html" class="flex items-center p-2 rounded-lg hover:bg-gray-100  group">
+                    <a href="attendance.html" class="flex items-center p-2 rounded-lg  shadow drop-shadow  bg-[#D9D9D9] group">
                         <img src="/Images/attendance-history.png" class="w-10 h-auto" alt="">
                         <span class="ms-3">Attendance History</span>
                     </a>
@@ -203,10 +205,14 @@
 
   <!-- for large screens -->
   <div class=" hidden lg:block w-fit mx-auto">
+   <div class="flex flex-row justify-between gap-6">
+
     <button class="bg-[#D9D9D9] shadow drop-shadow w-fit ml-auto  my-4  rounded-lg px-3 py-1 mr-2 cursor-pointer flex  justify-center flex-row items-center gap-1" > 
         <i class="fa-solid fa-print text-base text-[#2C384A]"></i>
         <span id="showAdd" class="font-semibold text-base text-center">Print</span>
 </button>
+   </div>
+   
     <table class="table-auto rounded-lg w-fit mx-auto text-black text-left rtl:text-right hidden lg:block">
         <thead class="bg-[#2C384A] shadow drop-shadow rounded-lg">
             <tr class=" shadow drop-shadow ">
@@ -416,6 +422,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="/JS/student-assistant.js"></script>
     <script src="/JS/sidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.0/flowbite.min.js"></script>
 </div>
 </body>
 
