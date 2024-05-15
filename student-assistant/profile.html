@@ -54,9 +54,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="notifications.html" class="flex items-center p-2  rounded-lg hover:bg-gray-100   group">
+                    <a href="attendance-history.html" class="flex items-center p-2 rounded-lg hover:bg-gray-100  group">
+                        <img src="/Images/attendance-history.png" class="w-10 h-auto" alt="">
+                        <span class="ms-3">Attendance History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="notifications.html" class="flex items-center p-2  rounded-lg  hover:bg-gray-100 group ">
                         <img src="/Images/notification.png" class="w-10 h-auto" alt="">
-                        <span class="flex-1 ms-3 whitespace-nowrap">Notifications</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap relative">
+                            Notifications
+                            <!-- Unread notifications badge -->
+                            <span class="absolute -top-3 -right-0 inline-flex items-center justify-center w-6 h-6 text-xs font-bold leading-none text-white bg-red-600 rounded-full">2</span>
+                        </span>
                     </a>
                 </li>
                
@@ -167,7 +177,7 @@
     </div>
 
 
-    <button class=" shadow  bg-transparent  border-[1px] border-[#ff0000] border-dashed hover:bg-[#ff0000]  hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-fit mx-auto flex flex-row px-2 items-center mt-5 me-3 gap-1 py-1 rounded-lg">
+    <button class=" shadow  bg-transparent  border-[1px] border-[#ff0000] border-dashed hover:text-white hover:bg-[#ff0000]  hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-fit mx-auto flex flex-row px-2 items-center mt-5 me-3 gap-1 py-1 rounded-lg">
     <i class="fa-solid fa-right-from-bracket text-xs lg:text-sm text-center "></i>
     <span class=" font-semibold text-sm  text-center">Logout</span>
     
